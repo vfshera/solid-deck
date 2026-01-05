@@ -67,6 +67,10 @@ export default class Deck {
     return this.#cards.shift();
   }
 
+  get cards(): Card[] {
+    return [...this.#cards];
+  }
+
   get count(): number {
     return this.#cards.length;
   }
