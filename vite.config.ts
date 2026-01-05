@@ -8,7 +8,6 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     devtools(),
-
     TanStackRouterVite({ target: 'solid', autoCodeSplitting: true }),
     solidPlugin(),
     tailwindcss(),
